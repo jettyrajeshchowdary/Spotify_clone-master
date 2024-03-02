@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPOTIFY</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="Brand"><img src="logo.png" alt="spotify"></li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        
+        <div class="SongList">
+            <h1>BTS-PLAYLIST</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="dynamite.jpg" alt="1">
+                    <span class="songName">Dynamite</span>
+                    <span class="songlistPlay"><span class="ibutton"> <i id="0" class="far playsong fa-2x fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="myuniverse.jpg" alt="1">
+                    <span class="songName">My Universe</span>
+                    <span class="songlistPlay"><span class="ibutton"> <i songIndex="1" class="far playsong fa-2x fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="butter.jpg" alt="1">
+                    <span class="songName">Butter</span>
+                    <span class="songlistPlay"><span class="ibutton"> <i songIndex="2" class="far playsong fa-2x fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="dance.jpg" alt="1">
+                    <span class="songName">Permission to Dance</span>
+                    <span class="songlistPlay"><span class="ibutton"> <i id="3" class="far playsong fa-2x fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">               
+                    <img src="filter.jpg" alt="1">
+                    <span class="songName">Filter</span>
+                    <span class="songlistPlay"><span class="ibutton"> <i id="4" class="far playsong fa-2x fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="staygold.jpg" alt="1">
+                    <span class="songName">Stay Gold</span>
+                    <span class="songlistPlay"><span class="ibutton"> <i id="5" class="far playsong fa-2x fa-play-circle"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="SongBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0"max="100">
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far playsong fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="palying1.gif" width="42px" > <span id="mastersongName"></span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/54e08bf1be.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
